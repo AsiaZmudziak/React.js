@@ -2,20 +2,20 @@ import React from "react";
 import styles from "./Column.scss";
 import Card from "../Card/Card.js";
 import Creator from "../Creator/Creator.js";
+import Icon from "../Icon/Icon.js";
 import PropTypes from "prop-types";
 import { settings } from "../../data/dataStore";
 
 class Column extends React.Component {
-    state = {
-        cards: this.props.cards || []
-      };
+  state = {
+    cards: this.props.cards || []
+  };
 
   static propTypes = {
     title: PropTypes.node.isRequired,
     image: PropTypes.string.isRequired,
-    description: PropTypes.node,
-    columns: PropTypes.array,
     cards: PropTypes.array,
+    icon: PropTypes.string.isRequired
   };
 
   addCard(title) {
@@ -26,7 +26,6 @@ class Column extends React.Component {
           key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
           title,
           icon: "list-alt"
-          cards: []
         }
       ]
     }));
@@ -35,8 +34,11 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-         <h3 className={styles.title}>
+          <h3 className={styles.title}>
           {this.props.title}
+          <span className={styles.icon}>
+            <Icon name={this.props.icon} />
+          </span>
         </h3>
         <div className={styles.cards}>
           {this.state.cards.map(({ key, ...cardProps }) => (
@@ -50,5 +52,4 @@ class Column extends React.Component {
     );
   }
 }
-
 export default Column;
