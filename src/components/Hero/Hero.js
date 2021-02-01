@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Hero.scss";
-import PropTypes from "prop-types";
-import ReactHtmlParser from "react-html-parser";
+import React from 'react';
+import styles from './Hero.scss';
+import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 
 const Hero = props => (
   <header className={styles.component}>
@@ -11,8 +11,7 @@ const Hero = props => (
 );
 
 Hero.propTypes = {
-    titleText: PropTypes.node.isRequired,
-    imageImg: PropTypes.string.isRequired
-  };
-  
-  export default Hero;
+  titleText: PropTypes.node.isRequired,
+  imageImg: PropTypes.string.isRequired,
+};
+export default Hero;
