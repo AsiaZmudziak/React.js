@@ -20,6 +20,7 @@ export default function reducer(statePart = '', action = {}) {
       return action.payload;
     default:
       return statePart;
+       
       
   }
 }
