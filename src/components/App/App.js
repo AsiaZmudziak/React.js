@@ -22,7 +22,6 @@ const App = () => (
         <Route exact path="/info" component={Info} />
         <Route exact path='/faq' component={FAQ} />
         <Route exact path="/list/:id" component={List} />
-       
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
