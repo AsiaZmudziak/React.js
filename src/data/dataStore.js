@@ -72,6 +72,18 @@ export const listData = {
   ],
 };
 
+export const infoData = {
+  title: 'Page Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ante eu ligula laoreet porta',
+};
+
+export const faqData = {
+  title: 'Page FAQ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Donec dictum aliquam nunc, ut mollis est vehicula in.',
+};
+
 const lists = [
   {
     id: 'list-1',
