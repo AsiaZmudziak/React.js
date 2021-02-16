@@ -93,14 +93,14 @@ const lists = [
   },
   {
     id: 'list-2',
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
+    title: 'Things to <sup>read!</sup>',
+    description: 'Interesting I want to read!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
     id: 'list-3',
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
+    title: 'Things to <sup>learn!</sup>',
+    description: 'Interesting things I want to learn!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
